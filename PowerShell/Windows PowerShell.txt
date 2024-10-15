@@ -1,0 +1,157 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\DELL E5490> Test-Connection
+
+PS C:\Users\DELL E5490> cd '.\Downloads\Azure Keys\'
+PS C:\Users\DELL E5490\Downloads\Azure Keys> ssh -i .\test-vm_key_0831.pem azureuser@52.140.2.166   ******************
+The authenticity of host '52.140.2.166 (52.140.2.166)' can't be established.
+ED25519 key fingerprint is SHA256:mWmvnUAwt7Tmk0k7qAv7NogqUsTWGmfQCKC0aTEhZkE.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '52.140.2.166' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-1013-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Aug 31 22:09:40 UTC 2024
+
+  System load:  0.08              Processes:             107
+  Usage of /:   5.0% of 28.02GB   Users logged in:       0
+  Memory usage: 31%               IPv4 address for eth0: 10.0.0.5
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+azureuser@test-vm:~$ ls
+azureuser@test-vm:~$ sudo apt update
+Hit:1 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:7 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:11 http://azure.archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:12 http://azure.archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [469 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [117 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [7768 B]
+Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [337 kB]
+Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [142 kB]
+Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [45.0 kB]
+Get:19 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [13.7 kB]
+Get:20 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [14.1 kB]
+Get:21 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [3608 B]
+Get:22 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [212 B]
+Get:23 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [532 B]
+Get:24 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Get:25 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [112 B]
+Get:26 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [10.3 kB]
+Get:27 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [10.5 kB]
+Get:28 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [17.6 kB]
+Get:29 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1016 B]
+Get:30 http://azure.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:31 http://azure.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:32 http://azure.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:33 http://azure.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:34 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [323 kB]
+Get:35 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [73.1 kB]
+Get:36 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [4220 B]
+Get:37 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [252 kB]
+Get:38 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [109 kB]
+Get:39 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [8632 B]
+Get:40 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [9756 B]
+Get:41 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [280 kB]
+Get:42 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [54.8 kB]
+Get:43 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [10.6 kB]
+Get:44 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [2808 B]
+Get:45 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:46 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [344 B]
+Fetched 28.3 MB in 6s (4724 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+83 packages can be upgraded. Run 'apt list --upgradable' to see them.
+azureuser@test-vm:~$ sudo apt install telnet
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+telnet is already the newest version (0.17+2.5-3ubuntu4).
+telnet set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 83 not upgraded.
+azureuser@test-vm:~$ telnet example.com 80
+Trying 93.184.215.14...
+Connected to example.com.
+Escape character is '^]'.
+Connection closed by foreign host.
+azureuser@test-vm:~$ ping 52.140.35.29
+PING 52.140.35.29 (52.140.35.29) 56(84) bytes of data.
+^C
+--- 52.140.35.29 ping statistics ---
+87 packets transmitted, 0 received, 100% packet loss, time 88077ms
+
+azureuser@test-vm:~$ telnet 52.140.35.29
+Trying 52.140.35.29...
+^C
+azureuser@test-vm:~$ ~/.ssh/config
+-bash: /home/azureuser/.ssh/config: No such file or directory
+azureuser@test-vm:~$ grep Port /etc/ssh/sshd_config
+#Port 22
+#GatewayPorts no
+azureuser@test-vm:~$ telnet 52.140.35.29
+::1              ff00::0          ff02::2          ip6-allhosts     ip6-allrouters   ip6-localnet     ip6-mcastprefix
+fe00::0          ff02::1          ff02::3          ip6-allnodes     ip6-localhost    ip6-loopback     localhost
+azureuser@test-vm:~$ telnet 52.140.35.29 22
+Trying 52.140.35.29...
+Connected to 52.140.35.29.
+Escape character is '^]'.
+SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.4
+^C
+Connection closed by foreign host.
+azureuser@test-vm:~$ ip r
+default via 10.0.0.1 dev eth0 proto dhcp src 10.0.0.5 metric 100
+10.0.0.0/24 dev eth0 proto kernel scope link src 10.0.0.5 metric 100
+10.0.0.1 dev eth0 proto dhcp scope link src 10.0.0.5 metric 100
+168.63.129.16 via 10.0.0.1 dev eth0 proto dhcp src 10.0.0.5 metric 100
+169.254.169.254 via 10.0.0.1 dev eth0 proto dhcp src 10.0.0.5 metric 100
+azureuser@test-vm:~$ telnet 10.0.0.4 22
+Trying 10.0.0.4...
+Connected to 10.0.0.4.
+Escape character is '^]'.
+SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.4
+Connection closed by foreign host.
+azureuser@test-vm:~$ client_loop: send disconnect: Connection reset
+PS C:\Users\DELL E5490\Downloads\Azure Keys>

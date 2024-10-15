@@ -1,0 +1,76 @@
+<html>
+ <head>
+  <style>
+   body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+        }
+        .hexagon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 173.21px;
+            margin-top: -86.60px;
+            margin-left: -150px;
+            background-color: transparent;
+            border-left: solid 5px #f9a825;
+            border-right: solid 5px #f9a825;
+            transform: rotate(30deg);
+        }
+        .hexagon:before,
+        .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+        }
+        .hexagon:before {
+            bottom: 100%;
+            border-bottom: solid 86.60px #f9a825;
+        }
+        .hexagon:after {
+            top: 100%;
+            width: 0;
+            border-top: solid 86.60px #f9a825;
+        }
+        .logo {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+        .logo-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: #2196f3;
+            margin-left: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="hexagon">
+   </div>
+   <div class="logo">
+    <img alt="Logo with a stylized 'S' in blue gradient" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-AaznWdqWcv6VgQTIDbF4Y5iu.png?st=2024-09-17T16%3A01%3A54Z&amp;se=2024-09-17T18%3A01%3A54Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-16T23%3A28%3A26Z&amp;ske=2024-09-17T23%3A28%3A26Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=E%2Bc3gNcegPYgmC6ELwj9kglsLkkozGlUcIlMPoTLpX8%3D" width="50"/>
+    <div class="logo-text">
+     KLOUD4S
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
